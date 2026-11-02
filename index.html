@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECK MART | Everyday Style</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="ECK MART home">
+      <span class="brand-mark">E</span><span>ECK<span class="green">MART</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="nav">
+      <a class="active" href="#">Home</a>
+      <a href="#mens">ECK — Mens <span>⌄</span></a>
+      <a href="#womens">ECK — Womens <span>⌄</span></a>
+      <a href="#shirts">Unisex T-Shirt <span>⌄</span></a>
+      <a href="#franchise">Franchise</a>
+    </nav>
+    <div class="header-actions">
+      <button aria-label="Shopping bag" id="bagButton">♧ <span id="cartCount">0</span></button>
+      <button aria-label="Search" id="searchButton">⌕</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Featured collection">
+      <div class="hero-copy">
+        <p class="eyebrow">E C K&nbsp;&nbsp; M A R T</p>
+        <h1>Men’s sweatshirt<br>style <span>and nature.</span></h1>
+        <p class="hero-sub">Comfort that moves with you.</p>
+        <a class="button" href="#mens">Shop collection <span>→</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="shape orange"></div><div class="shape yellow"></div>
+        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1100&q=85" alt="Models wearing casual streetwear">
+        <div class="shape aqua"></div>
+      </div>
+      <button class="hero-arrow prev" aria-label="Previous banner">‹</button>
+      <button class="hero-arrow next" aria-label="Next banner">›</button>
+      <div class="dots"><span class="selected"></span><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="collection" id="mens">
+      <div class="section-heading">
+        <h2>Trendy item</h2><a href="#products">View all <span>→</span></a>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="men">Men</button>
+        <button class="filter" data-filter="women">Women</button>
+        <button class="filter" data-filter="unisex">Unisex</button>
+      </div>
+      <div class="product-grid" id="products">
+        <article class="product-card" data-category="men">
+          <div class="product-image"><span class="sale">SALE</span><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80" alt="Black casual sweatshirt"></div>
+          <h3>Classic Black Sweatshirt</h3><p class="price">₹1,299 <del>₹1,799</del></p><button class="add-to-cart">Add to bag</button>
+        </article>
+        <article class="product-card" data-category="women">
+          <div class="product-image"><span class="sale">SALE</span><img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=600&q=80" alt="Casual women's jacket"></div>
+          <h3>Everyday Casual Jacket</h3><p class="price">₹1,499 <del>₹1,999</del></p><button class="add-to-cart">Add to bag</button>
+        </article>
+        <article class="product-card" data-category="unisex">
+          <div class="product-image"><span class="sale">SALE</span><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Graphic unisex T-shirt"></div>
+          <h3>Graphic Unisex T-Shirt</h3><p class="price">₹699 <del>₹999</del></p><button class="add-to-cart">Add to bag</button>
+        </article>
+        <article class="product-card" data-category="men">
+          <div class="product-image"><span class="sale">SALE</span><img src="https://images.unsplash.com/photo-1511196048412-1a2a4f4a4d2a?auto=format&fit=crop&w=600&q=80" alt="Men's casual shirt"></div>
+          <h3>Relaxed Fit Shirt</h3><p class="price">₹999 <del>₹1,399</del></p><button class="add-to-cart">Add to bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="promo" id="womens">
+      <div><p class="eyebrow">NEW SEASON</p><h2>Find your everyday<br>favourite.</h2><p>Easy layers. Fresh fits. Made for your day.</p><a class="button dark" href="#products">Explore collection →</a></div>
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85" alt="Casual fashion collection">
+    </section>
+    <section class="newsletter" id="franchise"><h2>Stay in style</h2><p>Get updates on new collections and offers.</p><form id="newsletter"><input type="email" placeholder="Enter your email" required><button class="button" type="submit">Subscribe →</button></form></section>
+  </main>
+  <footer><a class="brand" href="#">ECK<span class="green">MART</span></a><p>© 2026 ECK MART. Everyday style, made simple.</p><div><a href="#mens">Men</a><a href="#womens">Women</a><a href="#shirts">T-Shirts</a></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
